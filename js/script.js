@@ -145,6 +145,21 @@ function thanx() {
       }, 3000);
     } 
     else {
+
+      document.getElementById('reviewForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent the default form submission
+        // Use EmailJS to send form data
+        // service & temp id 
+        emailjs.sendForm('service_0g2lryl', 'template_b7ktukj', this)
+            .then(function(response) {
+                alert('Review submitted successfully!');
+            }, function(error) {
+                console.log('FAILED...', error);
+                alert('There was an error submitting your review. Please try again.');
+            });
+      });
+
+
       paragraph.textContent = "Thanks for Contacting us..  ! We Will Contact You Soon...";
       // paragraph.textContent = "Please fill all details.";
   
