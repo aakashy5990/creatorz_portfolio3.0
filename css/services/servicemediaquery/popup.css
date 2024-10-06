@@ -1,0 +1,22 @@
+@media screen and (max-width: 900px) {
+  .popup-box {
+    padding: 10px !important;
+    width: 60% !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .popup-box {
+    width: 85% !important;
+  }
+  
+  .close-btn{
+    margin: 5rem 2rem 0 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .popup-box {
+    height: 30% !important;
+  }
+}

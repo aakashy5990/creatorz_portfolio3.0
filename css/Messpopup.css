@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+        /* Popup container styling */
+        .popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, .0125);
+    justify-content: right;
+    align-items: end;
+    z-index: 2;
+}
+
+/* Popup container active state to make it visible */
+.popup-container.active {
+    display: flex;
+}
+
+/* Popup box styling */
+.popup-box {
+    /* position: relative; */
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 2rem 2rem 0;
+    width: 30%;
+    /* height: 60%; */
+    /* border-radius: 10px; */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden;
+}
+
+/* .popup-box iframe {
+    width: 100%;
+    height: 100%;
+    max-height: 90vh;
+} */
+
+
+.emo_btn, .attach_btn {
+  display: inline-block;
+  width: 40px; 
+  height: 40px;
+  line-height: 40px; 
+  text-align: center;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  }
+
+   /* Add your additional styles here */
+   #word-count {
+    font-size: 12px; }
+
+
+/* Hide the default file input */
+input[type="file"] {
+  display: none;
+}
+
+/* Style for the icon */
+.file-icon {
+  cursor: pointer;
+  font-size: 24px;
+  color: #333; 
+}
+
+.file-icon:hover {
+  color: #007bff;
+}
+
+
+.pop_logo img{
+  width: 50px;
+  border-radius: 50%;
+}
+
+.pop_nav_main{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.pop_nav_con{
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  column-gap: 10px;
+}
+
+textarea{
+  resize: none;
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  font-size: 1rem;
+}
+.pop_sub_child1{
+  width: 100%;
+}
+
+.pop_sub_child1 .emo_btn,
+.pop_sub_child1 .attach_btn {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pop_sub_con {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pop_nav_child{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1px;
+}

@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D Animation</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
     rel="stylesheet"
 />
+
     <link rel="stylesheet" href="css/swiper-bundle.css" />
     <link rel="stylesheet" href="css/services/animation.css" />
     <link rel="stylesheet" href="css/services/servicemediaquery/servicemediaquery.css" />
     <link rel="stylesheet" href="css/services/servicemediaquery/cardmediaquery.css">
     <link rel="stylesheet" href="css/services/servicemediaquery/textslidermediaquery.css">
+    <link rel="stylesheet" href="css/services/servicemediaquery/popup.css">
     <style>
 
-        /* Popup container styling */
+      /* Popup container styling */
 .popup-container {
     display: none;
     position: fixed;
@@ -77,13 +78,9 @@
     top: 0;
 }
 
-.close-btn:hover {
-    /* background-color: rgba(0, 0, 0, 0.8); */
-}
-
     </style>
   </head>
-  <body>
+  <>
     
     <div class="cursor-outline" data-cursor-outline></div>
     <div class="cursor-dot" data-cursor-dot></div>
@@ -320,7 +317,7 @@
       <div class="service_card_main">
         <div class="service_card_main_container">
           <div class="service_card_box_one service_box_comm">
-            <div class="container show-popup" data-video="https://www.youtube.com/embed/-QIdv14T-3Q?si=K266StdlqjUSC-xp">
+            <div class="container show-popup" data-video="https://www.youtube.com/embed/5nsRMmuEdxo?si=Z4CY3rUWPtuEvWfY">
               <img src="service_img/3danimation/Love.webp" alt="" />
             </div>
           </div>
@@ -342,7 +339,7 @@
       <div class="service_card_main">
         <div class="service_card_main_container">
           <div class="service_card_box_one service_box_comm">
-            <div class="container show-popup" data-video="https://www.youtube.com/embed/-QIdv14T-3Q?si=K266StdlqjUSC-xp">
+            <div class="container show-popup" data-video="https://www.youtube.com/embed/z82eHLjVj-s?si=8tauewcsaKjFUrR6">
               <img src="service_img/3danimation/omnitrix.webp" alt="" />
             </div>
           </div>
@@ -352,7 +349,7 @@
         </div>
         <div class="service_card_main_container">
           <div class="service_card_box_two service_box_comm">
-            <div class="container show-popup" data-video="https://www.youtube.com/embed/-QIdv14T-3Q?si=K266StdlqjUSC-xp">
+            <div class="container show-popup" data-video="https://www.youtube.com/embed/zRJGzbZocYg?si=N8jf_L5dNwCjX0-U">
               <img src="service_img/3danimation/uPVC.webp" alt="" />
             </div>
           </div>
@@ -363,22 +360,25 @@
       </div>
     </div>
 
+
     <!-- service footer  -->
-  <div class="service_footer_container">
-    <p>Custom Requests?</p>
-    <div class="service_button_container">
-      <button class="enquire_button">Enquire now</button>
+    <div class="service_footer_container">
+      <p>Custom Requests?</p>
+      <div class="service_button_container">
+        <button class="enquire_button">Enquire now</button>
+      </div>
     </div>
-  </div>
 
 
-  <!-- Popup Structure -->
-  <div class="popup-container" id="popup">
-    <div class="popup-box">
-      <span class="close-btn " id="close-popup"><i class="ri-close-line"></i></span>
-      <iframe id="video-frame" src="" frameborder="0" allowfullscreen><iframe>
+    <!-- Popup Structure -->
+    <div class="popup-container" id="popup">
+        <div class="popup-box">
+        <span class="close-btn " id="close-popup">
+          <i class="ri-close-line"></i>
+        </span>
+        <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
-  </div>
   
 
 

@@ -11,7 +11,19 @@
     <!-- mediaquery css   -->
     <!-- icon only on scroll arrow  -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-/>
+    <link rel="stylesheet" href="css/Messpopup.css">
+    <link rel="icon" href="img/main_logo.jpg">
+    <link rel="stylesheet" href="css/Messpopup.css">
+
+
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // <!-- Replace with your actual User ID -->
+            emailjs.init("XW2efvn2WcKYhzMC6"); 
+        })();
+    </script>
   </head>
   <body>
     <!-- *************************first page start********************8* -->
@@ -68,7 +80,7 @@
           </div>
           <div class="intro_text_button">
             <div class="intro_btn_container">
-              <button class="intro_btn_button">start a project</button>
+              <button class="intro_btn_button show-popup">start a project</button>
             </div>
             <div class="intro_pro_client_main">
               <div class="intro_pro_client_content">
@@ -524,11 +536,62 @@
       </div>
     </footer>
     
+        <!-- Popup Structure -->
+        <div class="popup-container" id="popup">
+          <div class="popup-box">
+              <div class="pop_nav_main">
+                  <div class="pop_nav_con">
+                      <div class="pop_logo">
+                          <img src="img/main_logo.jpg" alt="">
+                      </div>
+                      <div class="pop_nav_child">
+                          <div class="pop_nav_head">
+                              <p>Message Pixel Pulse</p>
+                          </div>
+                          <div class="pop_nav_pera">
+                              <p>Away. Avg response time: 1 Hour</p>
+                          </div>
+                      </div>
+                  </div>
+                  <span class="close-btn" id="close-popup">
+                      <i class="ri-close-line"></i>
+                  </span>
+              </div>
+      
+              <!-- Form -->
+              <form id="messages" action="/submit" method="POST">
+                  <div class="pop_input">
+                      <textarea name="message" rows="15" id="message" placeholder="Type your message..." required></textarea>
+                      <div id="word-count">0/100 words</div> <!-- Word count display -->
+                      <p class="thanx" id="thanx2"></p> <!-- Success/Error message display -->
+                  </div>
+      
+                  <div class="pop_sub">
+                      <div class="pop_sub_con">
+                          <div class="pop_sub_child1">
+                              <div class="emo_btn" id="emoji-btn">
+                                  <!-- Emoji button -->
+                                  <i class="ri-emoji-sticker-line"></i>
+                              </div>
+                              <div class="attach_btn">
+                                  <!-- Hidden file input -->
+                                  <input type="file" id="file-upload" name="file" accept="image/*, application/pdf" required>
+                                  <label for="file-upload" class="file-icon">
+                                      <i class="ri-attachment-line"></i>
+                                  </label>
+                              </div>
+                          </div>
+                          <div class="pop_sub_child2">
+                              <div class="pop_sub_btn">
+                                  <input type="submit" name="send" value="Send Message" id="">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
 
-
-    <div class="scroll_arrow">
-      <i class="ri-arrow-up-double-line"></i>
-    </div>
 
     
 
@@ -536,11 +599,15 @@
     <!-- ********************footer section End******************** -->
 
 
+
     <!-- <script src="js/component/navbar.js"></script> -->
+    <!-- Load the Emoji Button library -->
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@4.6.2/dist/index.min.js" type="module"></script>
     <script src="js/mediaquery.js"></script>
     <script src="js/swiper-bundle.js"></script>
     <script src="js/script.js"></script>
     <script>
+      
 
       // client slider js code 
       var swiper = new Swiper(".mySwiper", {
@@ -564,24 +631,36 @@
       });
 
 
+    document.addEventListener("DOMContentLoaded", function () {
+    const popupContainer = document.getElementById('popup');
+    const closePopup = document.getElementById('close-popup');
+    const videoFrame = document.getElementById('video-frame');
 
-      // let isScrolling;
-      // const header = document.querySelector(".main_navbar");
-      // window.addEventListener(
-      //   "scroll",
-      //   function () {
-      //     window.clearTimeout(isScrolling);
+    // Trigger popup on click
+    document.querySelectorAll('.show-popup').forEach(item => {
+        item.addEventListener('click', function () {
+        // const videoSrc = this.getAttribute('data-video');
+        // videoFrame.src = videoSrc;
+        popupContainer.classList.add('active');
+        });
+    });
 
-      //     header.style.visibility = "hidden";
-      //     header.style.opacity = "0";
+    // Close popup
+    closePopup.addEventListener('click', function () {
+        popupContainer.classList.remove('active');
+        // videoFrame.src = "";  // Reset video when closing popup
+    });
 
-      //     isScrolling = setTimeout(function () {
-      //       header.style.visibility = "visible";
-      //       header.style.opacity = "1";
-      //     }, 1000);
-      //   },
-      //   false
-      // );
+    // Close popup when clicking outside of it
+    popupContainer.addEventListener('click', function (e) {
+        if (e.target === popupContainer) {
+        popupContainer.classList.remove('active');
+        // videoFrame.src = "";  // Reset video when closing popup
+        }
+    });
+    });
+
+  
     </script>
   </body>
 </html>
