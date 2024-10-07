@@ -1,3 +1,79 @@
+:root {
+  --text-w-color: #fff;
+  --text-b-color: #000;
+  --secondary-color: #21d0fb;
+
+
+  --font-weight-bold: bold;
+  --font-weight-semibold: 600;
+  --font-weight-light: 300;
+  --font-weight-extralight: 200;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --font-weight-regular: normal;
+
+
+  --padding-left-main: 100px;
+  --padding-standard: 0 100px;
+
+  --padding-left-normal: 50px;
+  --padding-standard-normal: 0 50px;
+
+  --padding-left-little-small: 25px;
+  --padding-standard-little-small: 0 25px;
+
+  --padding-left-small: 40px;
+  --padding-standard-small: 0 40px;
+
+
+  --padding-left-medium: 70px;
+  --padding-standard-medium: 0 70px;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('fonts/ClashDisplay-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('fonts/ClashDisplay-Extralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('fonts/ClashDisplay-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('fonts/ClashDisplay-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('fonts/ClashDisplay-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('fonts/ClashDisplay-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
 *{
   margin: 0;
   padding: 0;
@@ -31,7 +107,7 @@
     margin: 0 2rem 2rem 0;
     width: 30%;
     /* height: 60%; */
-    /* border-radius: 10px; */
+    border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     max-width: 90%;
     max-height: 90%;
@@ -56,9 +132,34 @@
   color: #333;
   }
 
-   /* Add your additional styles here */
-   #word-count {
-    font-size: 12px; }
+  #word-count {
+    font-size: 12px;
+    font-family: 'Clash Display', sans-serif;
+  }
+
+  .close-btn i{
+    font-size: 1.5rem;
+  }
+  
+  .pop_nav_head p{
+    font-family: 'Clash Display', sans-serif;
+    font-weight: var(--font-weight-medium);
+  }
+
+  .pop_nav_pera p{
+    font-family: 'Clash Display', sans-serif;
+    color: gray; 
+    font-size: 13px;
+  }
+
+  .pop_sub_btn input{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: var(--font-weight-medium);
+  }
 
 
 /* Hide the default file input */
@@ -103,7 +204,12 @@ textarea{
   outline: none;
   padding: 10px;
   font-size: 1rem;
+  border: none;
+  border-top: 1px solid rgb(197, 197, 197);
+  border-bottom: 1px solid rgb(197, 197, 197);
+  margin: 10px 0  ;
 }
+
 .pop_sub_child1{
   width: 100%;
 }

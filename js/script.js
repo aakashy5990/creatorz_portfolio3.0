@@ -145,7 +145,6 @@ function thanx() {
       }, 3000);
     } 
     else {
-
       document.getElementById('reviewForm').addEventListener('submit', function(e) {
         e.preventDefault(); // Prevent the default form submission
         // Use EmailJS to send form data
