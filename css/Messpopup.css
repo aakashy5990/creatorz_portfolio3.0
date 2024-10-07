@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   --text-w-color: #fff;
   --text-b-color: #000;
@@ -132,9 +134,22 @@
   color: #333;
   }
 
-  #word-count {
+  #word-count{
     font-size: 12px;
     font-family: 'Clash Display', sans-serif;
+    text-align: right;
+    /* border-top: 1px solid gray; */
+  }
+  .uper{
+    border-top: 1px solid rgb(197, 197, 197);
+  }
+  .lower{
+    border-bottom: 1px solid rgb(197, 197, 197);
+    padding-bottom: 5px;
+  }
+  
+  .pop_sub{
+    padding-top: 5px;
   }
 
   .close-btn i{
@@ -201,13 +216,11 @@ input[type="file"] {
 textarea{
   resize: none;
   width: 100%;
+  opacity: .7;
   outline: none;
   padding: 10px;
   font-size: 1rem;
   border: none;
-  border-top: 1px solid rgb(197, 197, 197);
-  border-bottom: 1px solid rgb(197, 197, 197);
-  margin: 10px 0  ;
 }
 
 .pop_sub_child1{
