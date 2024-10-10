@@ -1,35 +1,3 @@
-// function loadComponent(url, elementId) {
-//   fetch(url)
-//   .then(response => {
-//       if (!response.ok) {
-//           throw new Error(`Failed to load ${url}: ${response.statusText}`);
-//       }
-//       return response.text();
-//   })
-//   .then(data => {
-//       document.getElementById(elementId).innerHTML = data;
-//   })
-//   .catch(error => console.error('Error loading component:', error));
-// }
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   let basePath = '';
-
-//   // if (window.location.pathname.includes('/contact/')) {
-//   //     basePath = '../';
-//   // }
-
-//   if (window.location.pathname.includes('/service_html/brand/')) {
-//       basePath = '../../';
-//   }
-
-//   // Load the navigation bar and footer components
-//   loadComponent(basePath + 'component/navbar.html', 'navbar');
-//   loadComponent(basePath + 'component/footer.html', 'footer');
-// });
-
-
-
 function loadComponent(url, elementId) {
   fetch(url)
   .then(response => {

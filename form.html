@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit Your Review</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/remixicon.css" />
+    <link rel="stylesheet" href="css/mediaquery.css" />
+    <link rel="stylesheet" href="css/services/servicemediaquery/servicemediaquery.css">
     <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="icon" href="img/main_logo.jpg">
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
@@ -15,11 +23,18 @@
     
 </head>
 <body>
+
+    <div class="cursor-outline" data-cursor-outline></div>
+    <div class="cursor-dot" data-cursor-dot></div>
+
+    <!-- .navbar fatched by navbar.html -->
+    <div id="navbar"></div>
+
     <div class="container">
         <div class="main_container">
             <div class="logo">
                 <div class="img_logo">
-                    <img src="img/333.png" alt="">
+                    <a href="index.html"><img src="img/333.png" alt=""></a>
                 </div>
             </div>
             <p class="pera_heading">Submit Your Review</p>
@@ -77,9 +92,13 @@
         </div>
     </div>
 
+    <!-- service footer  -->
+    <div id="footer"></div>
+
     <script type="text/javascript">
         
     </script>
+    <script src="js/component/component.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

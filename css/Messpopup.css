@@ -167,29 +167,35 @@
     font-size: 13px;
   }
 
-  .pop_sub_btn input{
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: 'Clash Display', sans-serif;
-    font-weight: var(--font-weight-medium);
-  }
-
 
 /* Hide the default file input */
-v
+#file-upload {
+  display: none;
+}
 
 /* Style for the icon */
 .file-icon {
   cursor: pointer;
   font-size: 24px;
-  color: #333; 
+  color: #333;
 }
 
 .file-icon:hover {
   color: #007bff;
 }
+
+/* Style for the submit button */
+.pop_sub_btn input {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Clash Display', sans-serif;
+  font-weight: var(--font-weight-medium);
+  }
+.pop_sub_btn input:hover{
+  background-color: #e7e7e7;
+  }
 
 
 .pop_logo img{

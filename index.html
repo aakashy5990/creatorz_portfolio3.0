@@ -12,7 +12,6 @@
     <!-- mediaquery css   -->
     <!-- icon only on scroll arrow  -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/Messpopup.css">
     <link rel="icon" href="img/main_logo.jpg">
     <link rel="stylesheet" href="css/Messpopup.css">
 
@@ -542,7 +541,8 @@
                               </div>
                               <div class="attach_btn">
                                   <!-- Hidden file input -->
-                                  <input type="file" id="file-upload" name="file" accept="image/*, application/pdf" required>
+                                  <input type="file" id="file-upload" name="file" accept="image/*, application/pdf" required style="display: none;">
+
                                   <label for="file-upload" class="file-icon">
                                       <i class="ri-attachment-line"></i>
                                   </label>
@@ -550,7 +550,7 @@
                           </div>
                           <div class="pop_sub_child2">
                               <div class="pop_sub_btn">
-                                <button type="submit">Submit</button>
+                                <input type="submit" value="Submit">
                               </div>
                           </div>
                       </div>
